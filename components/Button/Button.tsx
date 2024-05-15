@@ -6,7 +6,7 @@ const Button = ({ children, className }: ButtonProps) => {
   return (
     <button
       className={`
-        bg-primary text-white rounded-[8px] px-[32px] py-[12px] font-extrabold
+        bg-primary text-white rounded-md px-6 py-2 font-extrabold
         ${className}
         `}
     >
