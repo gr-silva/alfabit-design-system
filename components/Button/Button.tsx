@@ -16,9 +16,7 @@ const Button = ({ children, className, disabled, ...rest }: ButtonProps) => {
     );
   };
 
-  return Btn(
-    disabled ? "bg-bg-disabled text-text-disabled" : "bg-primary text-white"
-  );
+  return Btn(disabled ? "bg-disabled text-disabled" : "bg-primary text-white");
 };
 
 export default Button;
