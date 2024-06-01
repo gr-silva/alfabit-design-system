@@ -15,6 +15,7 @@ function getVariant(
         ? "bg-disabled text-disabled"
         : "bg-quaternary text-primary";
     case "tertiary":
+      return disabled ? "text-disabled" : "text-primary";
     default:
       return disabled ? "" : "";
   }
@@ -29,7 +30,7 @@ const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      className={`rounded-md px-6 py-2 ${getVariant(variant, disabled)} ${className}`}
+      className={`rounded-md px-6 py-2 font-extrabold ${getVariant(variant, disabled)} ${className}`}
       disabled={disabled}
       {...rest}
     >
